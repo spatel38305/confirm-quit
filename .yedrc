@@ -1,0 +1,2 @@
+set builder-build-command "./build.sh"
+plugins-add-dir .
