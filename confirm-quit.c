@@ -18,7 +18,7 @@ int yed_plugin_boot( yed_plugin *self )
 
 void confirm_quit( int nargs, char **args )
 {
-    if ( ys->interactive_command )
+    if ( ys->interactive_command && strcmp(ys->interactive_command, "quit") == 0 && nargs >= 1 )
     {
         int y_or_n;
         sscanf( args[0], "%d", &y_or_n );
